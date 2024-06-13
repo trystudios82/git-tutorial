@@ -1,0 +1,130 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 320px;
+  width:360px;
+}
+
+.logo{
+  flex: 1;
+  width: 180px;
+}
+
+
+.language-selector
+{
+  margin-left: 24px;
+display: flex;
+align-items: center;
+
+}
+
+.lang-dropdown{
+  font-family: Opensans, Arial;
+  font-size: 14px;
+  height: 32px;
+  /*border-color: #cfcfcf;
+  border-style: solid;
+  border-width: 1 px;
+  border-radius: 2px;*/
+  border: none;
+}
+
+.lang-icon
+{
+
+  height: 44px;
+  align-content: center;
+  margin-top: 2px;
+  margin-right: 4px;
+}
+
+.search-box{
+  
+  font-size: 14px;
+  height: 32px;
+  border-color: #cfcfcf;
+  border-style: solid;
+  border-width: 1 px;
+  border-radius: 2px;
+  padding-left: 8px;
+}
+
+
+.search-box::placeholder
+{
+padding-left: 2px;
+font-family: Opensans, Arial;
+font-size: 14px;
+color: #929292;
+}
+
+
+.rightarea{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.login-icon, .notification-icon,.help-icon {
+  width: 24px;
+}
+
+.notification-icon,.help-icon {
+  margin-right: 16px;
+}
+
+.login-icon {
+  margin-right: 8px;
+}
+
+
+.signup-icon {
+  margin-right: 8px;
+  width: 24px;
+  color: #ffffff;
+
+}
+
+
+.login-button{
+  display: flex;
+  align-items: center;
+  font-family: Opensans, Arial;
+  font-size: 14px;
+  color: #444444;
+  background-color: #ffffff;
+  border-color: #777777;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  height: 36px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.signup-button{
+  display: flex;
+  align-items: center;
+  font-family: Opensans, Arial;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #c1272d;
+  border-color: #c1272d;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  height: 36px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 8px;
+}

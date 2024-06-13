@@ -1,0 +1,163 @@
+
+.header
+{
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  left: 0;
+  top:0;
+  right:0;
+  background-color: #ffffff;
+  border-bottom-color: #bababa;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+z-index: 100;
+}
+
+
+.hamburger{
+  height: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.youtube-logo{
+  height: 24px;
+}
+
+.left-section{
+  /*background-color: lightblue;*/
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+}
+ 
+
+.middle-section{
+  /*background-color: lightpink; */
+  flex:1;
+  margin-left: 72px ;
+  margin-right: 32px;
+  max-width: 500px;
+  
+  display: flex;
+  align-items: center;
+  
+  }
+
+.search-bar{
+flex:1;
+height: 36px;
+padding-left: 10px;
+
+font-size: 16px;
+border-color: #bababa;
+border-style: solid;
+border-width: 1px;
+background-color: #ffffff;
+border-radius: 2px;
+box-shadow: inset 1px 1px 2px rgb(1, 1, 1, 0.05);
+}
+
+.search-bar::placeholder{
+  font-family: Roboto, Arial ;
+  font-size: 16px;
+}
+
+.search-button{
+  height: 40px;
+  width: 60px;
+  border-color: #bababa;
+border-style: solid;
+border-width: 1px;
+background-color: #ececec;
+border-radius: 2px;
+margin-left: -1px;
+}
+
+.search-icon{
+height: 25px;
+margin-top: 4px;
+}
+
+.voice-search-button{
+  height: 40px;
+  width: 40px;
+  background-color: #ececec;
+  border-radius: 32px;
+  border-style:hidden;
+  margin-left: 24px;
+  padding-top: 4px;
+
+}
+
+.voice-icon{
+  height: 20px;
+}
+
+.upload-icon, .apps-icon, .notifications-icon, .channel-avatar{
+  height: 24px;
+  margin-right: 24px;
+}
+
+.notification{
+  position: relative;
+  
+}
+.notification-count{
+background-color: rgb(124, 0, 0);
+color: white;
+border-radius: 8px;
+position: absolute;
+font-family: Roboto, Arial;
+font-size: 11px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 1px;
+padding-top: 1px;
+right: 20px;
+top:0px;
+}
+
+.right-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.search-icon-container,
+.voicesearch-icon-container
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.search-icon-container .tooltip,
+.voice-search-button .tooltip
+{
+  background-color: #787878;
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  border-radius: 2px;
+  opacity: 0;
+  position: absolute;
+  top:40px;
+  transition: opacity 0.25s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-icon-container:hover .tooltip,
+.voice-search-button:hover .tooltip{
+  opacity: 1;
+}
+
